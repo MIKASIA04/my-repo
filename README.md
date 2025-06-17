@@ -1,4 +1,4 @@
-# Hey, I’m Mikasi
+## Hey, I’m Mikasi
 -  Focused on mastering full-stack development & problem solving
 -  Building coding tools, games & automation apps 
 -  Exploring open source and real-world system design
