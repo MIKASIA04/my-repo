@@ -1,0 +1,712 @@
+/*My first project , yay!*/
+div{
+    color:whitesmoke;
+}
+
+
+
+header{
+ color:white;
+background-color:rgb(17, 14, 61);
+z-index:1;
+text-align: center;
+position:fixed;
+width:100%;
+padding:6px;
+top:0;
+left:0;
+box-sizing: border-box;/*this ensures that the padding and border are inclusive within the given size width without increasing it*/
+
+
+}
+
+header h2{
+    display: inline-block;
+    border-right:4px solid whitesmoke ;
+    border-radius: 15px;
+    border-left: 4px solid whitesmoke;
+    width:15%;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.banner{
+        position: relative;
+        width:100%;
+         /*Pixels are fixed and stay the same even on small screens 
+         which can cause content overflow, width in % helps automatic scaling
+         on different screens and behaves responsively and keeps it proportional acc to what we ente*/
+        display:inline-block;
+}
+
+.banner img{
+    position: relative;
+   left:0;
+   margin:0;
+top:28px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow:hidden;  
+    /* used for content which was overflowing the content box and with hidden it means that
+    it gets clipped or hidden i.e. it doesn't show.This doesnt resize content,fix layout 
+    issues or adds scroll-bars.*/
+    display:block;
+    width:100%;
+    height:auto; 
+    /*adjusts height of element automatically based on its content 
+      i.e. it doesn't fix height.*/
+}
+.images,.image{
+
+
+    width:100%;
+    vertical-align: top;
+    /* displays inline or inline-block element to top of line box,
+    used here to align elements side by side*/
+    margin:20px 0;
+}
+.images img {
+    max-width: 50%;
+    position: relative;
+    left:50px;
+    white-space: nowrap;
+    padding: 10px;
+    display: inline-block;
+}
+
+.image img{
+    text-align: center;
+max-width: 70%;
+    position: relative;
+    left:20%;
+    padding:25px;
+    bottom:5px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.banner .welcome{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    /*It moves (translates) the element horizontally to the left
+     by 50% of its own width*/
+    color:whitesmoke;
+    top:25%;
+    font-size:3rem; 
+    /*rem- emphasize or enhance it the amount of times from the root 
+    element's size i.e. here 3 times*/
+   padding:20px;
+   text-align: center;
+
+
+}
+
+.banner h2 {
+    
+    font-size:48px;
+    right:30%;
+    top:20%;
+}
+
+.banner h2 span{
+    font-size:1.45em;
+    
+   right:40px;
+}
+
+nav li {
+    width:18%;
+     box-sizing: border-box;
+    display:inline-block;
+    font-size:20px;
+    top:40px;
+    padding: 10px 0;
+   }
+
+   nav {
+    background-color: #F4F4F4;
+    padding:6px;
+    position:sticky;
+top:40px;
+    z-index:1;
+    /* controls stacking order, 1 means higher i.e. on top , and 
+    changes according to value used*/
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    
+    
+    
+   }
+    
+nav ul {
+  display: flex;
+  /*Turns a container into a flexbox i.e. allows flexible child layout.
+ Flex children can grow, shrink, align easily.*/
+  flex-wrap: wrap;
+  /*Allows flex children to wrap to a new row if they don’t fit.*/
+  justify-content: center;
+  /*In a flex container, this aligns child elements in the center
+   along the main axis*/
+  gap: 20px;
+  /*Creates a 20-pixel space between items inside a flex or grid container*/
+  list-style: none;
+  /*Removes the default bullets or numbers from lists*/
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  flex: 1 1 auto;
+   /*flex-grow: 1: Can grow to fill available space
+    flex-shrink: 1: Can shrink if needed
+    flex-basis: auto: Initial size is based on content or width
+    1 is normal grow or shrink rate
+
+   */
+  min-width: max-content;
+  /* elements will have min width of its largest content,
+  it won't shrink smaller and prevents images  or texts 
+  being cut off.*/ 
+  text-align: center;
+}
+
+nav li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(17, 14, 61);
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+   
+
+   body,ul,li,a,h2{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   }
+   body{
+    overflow-x: hidden;
+   }
+
+   nav li a.join{
+    color: rgb(17, 14, 61);
+   }
+
+   main{
+    max-width:100%;
+    width:90%;
+    margin:120px auto 80px;
+     /*it says top having margin of 120 px auto margin for left and right
+     i.e. it brings it at centre and 80px margin of bottom*/
+    padding:0 20px;
+box-sizing: border-box;
+   }
+
+   article h2{
+    color:rgb(17, 14, 61);
+    font-size:38px;
+    
+   }
+
+   article p{
+    line-height: 1.5em;
+    
+    color:rgb(18, 15, 59);
+   }
+
+  .images{
+   
+    margin:60px 0;
+  }
+
+   .image{
+    
+    margin:60px 0;
+  }
+
+  .images{
+    display: inline-block;
+    width:40%;
+  }
+
+  .image{
+    display: inline-block;
+    width: 50%;
+
+}
+
+section.join{
+    background-color:#F4F4F4 ;
+    color:rgb(17, 14, 61);
+    padding:10px;
+    text-align:center ;
+    box-sizing: border-box;
+}
+
+ form input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin:20px 0;
+    padding:10px 20px;
+    border-radius: 16px;
+    border:3px solid whitesmoke;
+    box-sizing: border-box;
+    outline:none;
+    /*removes blue outline of focused elements like buttons,
+    inputs as such*/
+}
+
+.join h2{
+    font-size: 28px;
+}
+
+footer{
+    padding:8px;
+    color:whitesmoke;
+    background-color:rgb(18, 15, 59) ;
+    text-align: center;
+    box-sizing: border-box;
+    width:100%;
+    
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images img:hover{
+    position: relative;
+    top:-5px;
+}
+
+.image img:hover{
+    position:relative;
+    bottom:5px;
+}
+
+form input:valid{
+    border:2.5px solid rgb(18, 15, 59)  ;
+    
+}
+
+/*nav ul li:first-child a{
+/*First child li of a ul, which is inside nav*/
+/*nav li didnt work because li wasn't the direct first child of nav 
+but the direct first child of ul*/
+/*nav ul li:first-of-type a {
+  color: burlywood;
+} - using this would ensure Find a <nav> → then its <ul> → then the first <li> in that 
+ list → then the <a> inside that <li>, and set the text color to burlywood.”
+
+    color:burlywood; 
+}*/
+
+p::selection{
+    background-color:#e8e5e5 ;
+}
+
+@media screen and (max-width: 1040px){
+/*Media query for screens ≤ 1040px wide for responsive design.*/ 
+  .banner .welcome {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 893px) {
+  .banner .welcome {
+    font-size: 1.2rem;
+  }
+   nav{
+    position: sticky;
+    top:20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner .welcome {
+    font-size: 4.2rem; 
+  }
+}
+
+    
+
+
+@media screen and (max-width: 600px) {
+  .banner .welcome {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+/*targets screen level of media between that range*/ 
+  .banner .welcome {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .banner .welcome {
+    font-size: 3rem;
+  }
+}
+
+
+.image img{
+    transition:transform 0.4s ease,box-shadow-0.4s ease;
+    /*Animate changes to transform (like scale, translate, rotate) over 0.4 seconds with ease timing and
+ box-shadow	0.4s ease- Animates the shadow’s appearance/change over the same duration */
+}
+.images img{
+    transition:transform 0.4s ease,box-shadow-0.4s ease;
+}
+
+.image img:hover{
+    transform:scale(1.05);/*When we hover the image, it grows 5% with animation*/
+}
+.images img:hover{
+    transform:scale(1.05);
+}
+@media screen and (max-width: 968px) and (min-width: 893px) {
+  .banner h2 {
+    font-size: 38px;
+  }
+
+  .banner h2 span {
+    font-size: 1.35em;
+  }
+}
+
+@media screen and (max-width: 893px) and (min-width: 768px) {
+  .banner h2 {
+    font-size: 35px;
+  }
+
+  .banner h2 span {
+    font-size: 1.3em;
+  }
+
+  header h2 {
+    font-size: 18px;
+    width: auto;
+    padding: 4px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .banner h2 span {
+    font-size: 1.25em;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+/*targets mobile screens or with screen of width <=600px*/
+  .banner h2 {
+    font-size: 28px;
+  }
+
+  .banner h2 span {
+    font-size: 1.2em;
+  }
+
+  header h2 {
+    font-size: 15px;
+    width: auto;
+    padding: 2px 10px;
+  }
+
+  .banner .welcome {
+    font-size: 1.1rem;
+  }
+}
+
+
+body {
+  min-width: 430px;
+   /*Prevents body from shrinking smaller than 430px.
+ Avoids layout breaking on very small screens.*/
+}
+
+@media screen and (max-width: 640px) {
+  nav ul {
+    flex-direction: column;/* Makes flex children stack vertically (instead of row).*/
+    align-items: center;
+    /*Aligns all child items vertically inside a flex container
+    to the vertical center*/
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    
+  }
+
+  nav li a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+        font-size: 17px;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 430px) {
+  nav {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    padding: 4px 0;  
+    margin: 0;
+  }
+
+  .banner {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+nav li {
+ padding:1px 0; 
+  margin: 0;
+}
+
+
+@media (max-width: 500px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner img {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  header,
+  nav,
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: relative;
+    bottom:40px; 
+  }
+}
+
+
+.banner {
+  margin: 0;
+  padding: 0;
+}
+
+.banner img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  padding: 5px 0; 
+  margin: 0;
+}
+
+
+*{/* is the universal selector in CSS.
+It means “select every single element on the page”.
+It resets style globally.*/ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.banner {
+  margin: 0;
+  padding: 0;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0; 
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav li {
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+
+
+article {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .join h2 {
+    font-size: 22px;
+  }
+
+  .join p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .join h2 {
+    font-size: 20px;
+  }
+
+  .join p {
+    font-size: 14px;
+  }
+}
+
+article .images img,
+article .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 770px) {
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images,
+  .image {
+    width: 90%;
+  }
+}
+@media (max-width: 770px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  .images,
+  .image {
+    width: 70%;
+    display:inline-block;
+  }
+
+  .image {
+    margin-left: -60px; 
+}
+
+@media (max-width: 770px) {
+  .images img {
+    width: 80%;
+  }
+}
+
+.join p {
+  font-size: 16px;
+}
+
+.join h2{
+  font-size: 24.5px;
+}
+
+@media screen and (max-width:769px){
+  nav {
+    top:30px;
+    
+  }
+}
+@media screen and (max-width:894px){
+  nav {
+    top:35px;
+    
+  }
+}
+@media (max-width: 769px) {
+  nav {
+    position: static;
+    /*Default position of all elements.They appear in normal flow, 
+    unaffected by top, left,as such.*/
+    top: auto; 
+  }
+}
+
