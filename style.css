@@ -3,8 +3,6 @@ div{
     color:whitesmoke;
 }
 
-
-
 header{
  color:white;
 background-color:rgb(17, 14, 61);
@@ -56,15 +54,16 @@ top:28px;
     /*adjusts height of element automatically based on its content 
       i.e. it doesn't fix height.*/
 }
+
+
 .images,.image{
-
-
-    width:100%;
+   width:100%;
     vertical-align: top;
     /* displays inline or inline-block element to top of line box,
     used here to align elements side by side*/
     margin:20px 0;
 }
+
 .images img {
     max-width: 50%;
     position: relative;
@@ -73,6 +72,7 @@ top:28px;
     padding: 10px;
     display: inline-block;
 }
+
 
 .image img{
     text-align: center;
@@ -99,21 +99,18 @@ max-width: 70%;
     element's size i.e. here 3 times*/
    padding:20px;
    text-align: center;
-
-
 }
 
+
 .banner h2 {
-    
-    font-size:48px;
+ font-size:48px;
     right:30%;
     top:20%;
 }
 
 .banner h2 span{
     font-size:1.45em;
-    
-   right:40px;
+  right:40px;
 }
 
 nav li {
@@ -136,10 +133,7 @@ top:40px;
     width:100%;
     box-sizing: border-box;
     margin-top: 0;
-    
-    
-    
-   }
+      }
     
 nav ul {
   display: flex;
@@ -181,14 +175,13 @@ nav li a {
   display: inline-block;
 }
 
-   
-
-   body,ul,li,a,h2{
+body,ul,li,a,h2{
     margin:0;
     padding:0;
     box-sizing: border-box;
    }
-   body{
+ 
+body{
     overflow-x: hidden;
    }
 
@@ -209,23 +202,19 @@ box-sizing: border-box;
    article h2{
     color:rgb(17, 14, 61);
     font-size:38px;
-    
-   }
+    }
 
    article p{
     line-height: 1.5em;
-    
     color:rgb(18, 15, 59);
    }
 
   .images{
-   
-    margin:60px 0;
+   margin:60px 0;
   }
 
    .image{
-    
-    margin:60px 0;
+   margin:60px 0;
   }
 
   .images{
@@ -236,7 +225,6 @@ box-sizing: border-box;
   .image{
     display: inline-block;
     width: 50%;
-
 }
 
 section.join{
@@ -271,8 +259,7 @@ footer{
     text-align: center;
     box-sizing: border-box;
     width:100%;
-    
-}
+    }
 
 nav li a:hover{
     text-decoration: underline;
@@ -331,9 +318,6 @@ p::selection{
   }
 }
 
-    
-
-
 @media screen and (max-width: 600px) {
   .banner .welcome {
     font-size: 1.4rem;
@@ -359,6 +343,7 @@ p::selection{
     /*Animate changes to transform (like scale, translate, rotate) over 0.4 seconds with ease timing and
  box-shadow	0.4s ease- Animates the shadow’s appearance/change over the same duration */
 }
+
 .images img{
     transition:transform 0.4s ease,box-shadow-0.4s ease;
 }
@@ -366,9 +351,11 @@ p::selection{
 .image img:hover{
     transform:scale(1.05);/*When we hover the image, it grows 5% with animation*/
 }
+
 .images img:hover{
     transform:scale(1.05);
 }
+
 @media screen and (max-width: 968px) and (min-width: 893px) {
   .banner h2 {
     font-size: 38px;
@@ -387,8 +374,7 @@ p::selection{
   .banner h2 span {
     font-size: 1.3em;
   }
-
-  header h2 {
+ header h2 {
     font-size: 18px;
     width: auto;
     padding: 4px 12px;
@@ -463,8 +449,7 @@ body {
         text-align: center;
         padding: 0;
         margin: 0;
-        
-    }
+         }
 
     nav li {
         display: block;
@@ -609,9 +594,6 @@ body {
   text-align: center;
 }
 
-
-
-
 article {
   display: flex;
   justify-content: center;
@@ -658,6 +640,7 @@ article .image img {
     width: 90%;
   }
 }
+
 @media (max-width: 770px) {
   article {
     display: flex;
@@ -689,18 +672,21 @@ article .image img {
   font-size: 24.5px;
 }
 
+
 @media screen and (max-width:769px){
   nav {
     top:30px;
     
   }
 }
+
 @media screen and (max-width:894px){
   nav {
     top:35px;
     
   }
 }
+
 @media (max-width: 769px) {
   nav {
     position: static;
